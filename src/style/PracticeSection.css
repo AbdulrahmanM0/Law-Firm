@@ -1,0 +1,94 @@
+:root{
+    --white:#f3f4f6;
+    --gray: #e5e6e8;
+    --dark-gray:#d4d4d4;
+    --blue: #0554fe;
+    --dark-blue: #00305b;
+}
+/* start practice section */
+.practice-section{
+    background-color: var(--white);
+}
+.practice-section .container{
+    display: flex;
+}
+.practice-section .side-container{
+    background-color: #00315b30;
+    height: 100%;
+    padding: 90px 0;
+}
+.practice-section .side-container span{
+    color: var(--dark-blue);
+    font-size: 3em;
+    display: block;
+    font-weight: 600;
+    margin: 10px 0;
+    padding: 10px 0;
+}
+.practice-section .side-container :last-child{
+    font-weight: 400;
+}
+.practice-section .side-container div{
+    padding: 18px;
+}
+    /* start practice cards */
+.practice-section .practice-cards{
+    width: 100%;
+    padding: 90px 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill , minmax(240px,1fr));
+    gap: 20px;
+}    
+.practice-section .practice-cards .card{
+    padding-left: 40px; 
+    margin: 5px;
+    position: relative;
+    color: #204a6f;
+    box-shadow: 5px 0px 10px var(--gray);
+}
+.practice-section .practice-cards .card div{
+    padding: 10px;
+}
+.practice-section .practice-cards .card span{
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+.practice-section .practice-cards .card p{
+    line-height: 25px;
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+.practice-section .practice-cards .card::before{
+    content: "";
+    display: inline-block;
+    background-color: var(--blue);
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+    /* end practice cards */
+
+    /* start responsive media */
+@media (max-width: 767px) {
+    .practice-section .side-container{
+        height: 250px;
+        width: 100%;
+        padding: 20px;
+    }
+    .practice-section .container{
+        display: block;
+    }
+    .practice-section .side-container{
+        padding: 0;
+    }
+    .practice-section .practice-cards{
+        padding: 50px 0;
+    }
+}
+    /* end responsive media */
+/* end practice section */

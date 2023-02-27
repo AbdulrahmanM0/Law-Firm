@@ -1,0 +1,29 @@
+:root{
+    --white:#f3f4f6;
+    --gray: #e5e6e8;
+    --dark-gray:#d4d4d4;
+    --blue: #0554fe;
+    --dark-blue: #00305b;
+}
+/* start vision section */
+.vision-section{
+    background-color: var(--dark-blue);
+    text-align: center;
+    color: var(--white);
+}
+.vision-section .container{
+    padding: 60px 10px;
+}
+.vision-section span{
+    display: block;
+    font-size: 2em;
+    font-weight: 600;
+    padding: 20px;
+    margin: 20px;
+}
+.vision-section .vision-content p{
+    padding: 15px 0;
+    margin: 15px 0;
+    line-height: 20px;
+}
+/* end vision section */

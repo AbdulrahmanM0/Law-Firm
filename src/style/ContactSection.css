@@ -1,0 +1,171 @@
+/* start contact section */
+:root{
+    --white:#f3f4f6;
+    --gray: #e5e6e8;
+    --dark-gray:#d4d4d4;
+    --red: #f40b0b;
+    --blue: #0554fe;
+    --dark-blue: #00305b;
+}
+.contact-section{
+    background-image: url("../images/contact-img.webp");
+    background-size: cover;
+    position: relative;
+}
+.contact-section .container{
+    display: flex;
+    position: relative;
+    z-index: 11;
+}
+.contact-section .banar{
+    background-color: #00315b5a;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.contact-section .side-container{
+    background-color: #00315b9b;
+    position: relative;
+    color: var(--white);
+    height: 100%;
+}
+.contact-section .side-container div{
+    padding: 60px 0;
+    margin: 30px 0;
+    display: inline-block;
+    width: 100%;
+}
+.contact-section .side-container span{
+    display: block;
+    padding: 18px;
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 20px;
+}
+.contact-section .container .contact-info{
+    position: relative;
+    width: 100%;
+    padding: 50px 10px;
+    margin: 20px 0;
+    color: var(--white);
+}
+.contact-section .contact-info h4{
+    margin-bottom: 20px;
+    font-size: 1em;
+
+}
+.contact-section .contact-info div{
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.contact-section .contact-info .email span{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+.contact-section .contact-info .email a{
+    color: var(--white);
+}
+.contact-section .contact-info .tel span{
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+    /* start contact form */
+.contact-section .contact-container{
+    width: 100%;
+    padding: 20px 0;
+}
+.contact-section .form-container{
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    width: 100%;
+}
+.contact-section .form-container span{
+    display: block;
+    color: var(--white);
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.contact-section .form-container form{
+    display: grid;
+    grid-template-columns: repeat(2 , minmax(250px,50%));
+    grid-template-rows: repeat(10 , 30px);
+    grid-column-gap: 20px;
+}
+.contact-section .form-container input:hover{
+    border-color: var(--blue);
+}
+.contact-section .form-container input:focus{
+    background-color: var(--gray);
+}
+.contact-section .form-container textarea{
+    grid-area: 2 / 2 / 9 / 2;
+    resize: none;
+}
+.contact-section .form-container textarea:hover{
+    border-color: var(--blue);
+}
+.contact-section .form-container textarea:focus{
+    background-color: var(--gray);
+}
+.contact-section .form-container input[type=submit]{
+    grid-area: 10 / 1 / 10 / 3;
+    background-color: var(--dark-blue);
+    border-color: var(--white);
+    color: var(--white);
+    cursor: pointer;
+}
+.contact-section .form-container input[type=submit]:hover{
+    border-color: var(--blue);
+}
+.contact-section .form-container .msg{
+    grid-area: 1 / 2 / 2 / 3;
+}
+.contact-section .form-container label{
+    display: block;
+    color: var(--white);
+    line-height: 30px;
+}
+    /* end contact form */
+    /* start responsive media */
+@media (max-width: 767px) {
+    .contact-section .container{
+        display: block;
+    }
+    .contact-section .side-container{
+        height: 250px;
+        width: 100%;
+        padding: 20px;
+    }
+    .contact-section .side-container div{
+        padding: 30px 0;
+        margin: 10px 0;
+    }
+    .contact-section .form-container form{
+        display: block;
+    }
+    .contact-section .form-container input{
+        display: block;
+        width: 100%;
+        height: 25px;
+    }
+    .contact-section .form-container textarea{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}    
+@media (max-width: 1100px) and (min-width: 768px){
+    .contact-section .form-container form{
+        display: block;
+    }
+    .contact-section .form-container textarea{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .contact-section .form-container input{
+        display: block;
+        width: 100%;
+        height: 25px;
+    }
+}
+    /* end responsive media */
+/* end contact section */

@@ -1,0 +1,126 @@
+/* start header */
+:root{
+    --white:#f3f4f6;
+    --gray: #e5e6e8;
+    --dark-gray:#d4d4d4;
+    --blue: #0554fe;
+    --dark-blue: #00305b;
+}
+.header-element{
+    position: fixed;
+    width: 100%;
+    background-color: var(--white);
+    box-shadow: 0 2px 5px var(--dark-gray);
+    z-index: 100;
+}
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    /* start logo */
+.main-header .nav-logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.main-header .nav-logo h2{
+    font-size: 18px;
+    margin: 10px;
+    padding: 10px;
+}
+.main-header .nav-logo h2 span{
+    color: var(--blue);
+}
+    /* end logo */
+    /* start list */
+.list-icon{
+    display: none;
+    font-size: 20px;
+}
+.main-header .nav-list ul{
+    display: flex;
+    font-size: 14px;
+}    
+.main-header .nav-list ul li:not(:last-child){
+    margin-right: 14px;
+}
+.main-header .nav-list ul li a{
+    padding: 10px;
+    transition: .5s;
+    display: inline-block;
+    min-width: 80px;
+}
+.main-header .nav-list ul li a:hover{
+    color: var(--blue);
+}
+    /* end list */
+    /* start responsive list */
+.main-header .list-icon i{
+    position: relative;
+    z-index: 10;
+    transition: .3s;
+}
+.main-header .list-icon i:hover{
+    color:var(--blue);
+    cursor: pointer;
+}
+.main-header .list-icon .responsive-nav-list{
+    position: absolute;
+    width: 200px;
+    right: 0;
+    height: 100vh;
+    top: 0;
+    background-color: var(--gray);
+    padding: 50px 10px;
+    box-shadow: -2px 0 2px var(--dark-gray);
+    transition: 1s;
+    display: none;
+}
+.main-header .list-icon .responsive-nav-list li{
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+.main-header .list-icon .responsive-nav-list li a{
+    padding: 10px;
+    display: block;
+    transition: .3s;
+}
+.main-header .list-icon .responsive-nav-list li a:hover{
+    border-right:5px solid var(--white);
+    color: blue;
+    border-radius: 10px;
+    background-color: var(--dark-gray);
+}
+    /* end responsive list */
+    /* start responsive media */
+@media (max-width: 950px) and (min-width: 768px){
+    .list-icon{
+        display: block;
+    }
+    .main-header .list-icon .responsive-nav-list ul{
+        margin-top: 50px;
+    }
+    .nav-list{
+        display: none;
+    }
+}
+@media (max-width:767px) {
+    .list-icon{
+        display: block;
+    }
+    .nav-list{
+        display: none;
+    }
+    .main-header .nav-logo img{
+        width: 50px;
+    }
+    .main-header .nav-logo h2{
+        font-size: 14px;
+        margin: 5px;
+        padding: 5px;
+    }
+}
+
+    /* end responsive media */
+/* end header */

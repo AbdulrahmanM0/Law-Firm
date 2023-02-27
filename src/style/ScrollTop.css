@@ -1,0 +1,19 @@
+/* start scroll top */
+:root{
+    --white:#f3f4f6;
+    --gray: #e5e6e8;
+    --dark-gray:#d4d4d4;
+    --blue: #0554fe;
+    --dark-blue: #00305b;
+}
+.scroll-top{
+    width: 100%;
+    background-color: var(--dark-blue);
+}
+.scroll-top-container{
+    text-align: center;
+    color: var(--white);
+    padding: 10px;
+}
+
+/* end scroll top */

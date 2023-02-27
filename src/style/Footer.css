@@ -1,0 +1,27 @@
+/* start footer */
+:root{
+    --white:#f3f4f6;
+    --gray: #e5e6e8;
+    --dark-gray:#d4d4d4;
+    --blue: #0554fe;
+    --dark-blue: #00305b;
+}
+.main-footer{
+    width: 100%;
+    background-color: var(--white);
+}
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--dark-blue);
+    padding: 10px;
+}
+.footer-container i{
+    font-size: 20px;
+}
+.footer-container a{
+    margin-left: 10px;
+    color: var(--blue);
+}
+/* end footer */

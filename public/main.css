@@ -1,0 +1,35 @@
+/* start globale rules */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fff;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+/* end globale rules */
+/* start containers */
+.container{
+    margin: auto;
+    width: 80%;
+}
+.side-container{
+    height: 100vh;
+    width: 400px;
+}
+/* end containers */
+
+@media (max-width: 767px) {
+    .container{
+        width: 90%;
+    }
+}
